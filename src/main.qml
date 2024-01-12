@@ -16,7 +16,7 @@ ApplicationWindow {
     title: gameboy.running ? gameboy.romName : Qt.application.displayName
     Component.onCompleted: stateController.state = "loaded"
     Page{
-        rotation: 180
+        rotation: 90
         anchors.fill: parent
 
         footer: ToolBar{ ... }
