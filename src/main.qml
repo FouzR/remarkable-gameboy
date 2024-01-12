@@ -15,6 +15,12 @@ ApplicationWindow {
     minimumHeight: gameboyContainer.height + buttonSelect.height + 50
     title: gameboy.running ? gameboy.romName : Qt.application.displayName
     Component.onCompleted: stateController.state = "loaded"
+    Page{
+        rotation: 180
+        anchors.fill: parent
+
+        footer: ToolBar{ ... }
+    }
     header: Rectangle {
         color: "black"
         height: menu.height
