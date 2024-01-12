@@ -18,8 +18,6 @@ ApplicationWindow {
     Page{
         rotation: 90
         anchors.fill: parent
-
-        footer: ToolBar{ ... }
     }
     header: Rectangle {
         color: "black"
